@@ -1,3 +1,6 @@
+# normal build command
+# docker build -t docker-freepbx .
+
 FROM tiredofit/debian:buster
 LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 
