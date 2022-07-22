@@ -313,3 +313,7 @@ EXPOSE 80 443 4445 4569 5060/udp 5160/udp 5061 5161 8001 8003 8008 8009 8025 ${R
 
 ### Files add
 ADD install /
+
+# HACK: set busybox SUID root to work around "Apply config" error in web GUI
+RUN chmod u+s /bin/busybox
+
